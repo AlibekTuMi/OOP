@@ -1,19 +1,13 @@
 package Seminar_1;
 import java.util.ArrayList;
 import java.util.List;
-
 import Seminar_1.domen.Bottle;
 import Seminar_1.domen.HotDrink;
 import Seminar_1.domen.Product;
 import Seminar_1.servis.CoinDispenser;
 import Seminar_1.servis.Holder;
 import Seminar_1.servis.VendingMashine;
-import java.awt.*;
-// импортировали графическую библиотеку
-import java.awt.event.*;
-// библиотека для отслеживания нажатий на кнопки
-import javax.swing.*;
-// библиотека для создания графического интерфейса
+
 public class App {
     public static void main(String[] args) {
         List<Product> product = new ArrayList<>();
@@ -21,7 +15,6 @@ public class App {
         Product product2 = new Product("Кириешки 45гр", 49, 2);
         Product product3 = new Product("Колбаски охотничьи 115гр", 109, 3);
         Product product4 = new Bottle("Aqva Minerale", 89, 4, 0.5);
-    
         Product product5 = new HotDrink("Nescafe", 99, 5, 0.4, 65);
         product.add(product1);
         product.add(product2);
