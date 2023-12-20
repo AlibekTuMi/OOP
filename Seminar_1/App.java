@@ -21,7 +21,7 @@ public class App {
         Product product2 = new Product("Кириешки 45гр", 49, 2);
         Product product3 = new Product("Колбаски охотничьи 115гр", 109, 3);
         Product product4 = new Bottle("Aqva Minerale", 89, 4, 0.5);
-        System.out.println(product1);
+    
         Product product5 = new HotDrink("Nescafe", 99, 5, 0.4, 65);
         product.add(product1);
         product.add(product2);
