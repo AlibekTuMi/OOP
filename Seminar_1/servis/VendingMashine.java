@@ -14,13 +14,13 @@ public class VendingMashine {
      * Конструктор
      * @param holder
      * @param dispenser
-     * @param product2
+     * @param product
      */
 
-    public VendingMashine(Holder holder, CoinDispenser dispenser, List<Product> product2) {
+    public VendingMashine(Holder holder, CoinDispenser dispenser, List<Product> product) {
         this.holder = holder;
         this.dispenser = dispenser;
-        this.product = product2;
+        this.product = product;
     }
 
     public Holder getHolder() {
