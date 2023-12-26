@@ -70,10 +70,10 @@ public class App {
         students4.add(student32);
         students4.add(student33);
 
-        StudentsGroup studentsGroup1 = new StudentsGroup(5281, students);
-        StudentsGroup studentsGroup2 = new StudentsGroup(5288, students2);
-        StudentsGroup studentsGroup3 = new StudentsGroup(5081, students3);
-        StudentsGroup studentsGroup4 = new StudentsGroup(5291, students4);
+        StudentsGroup studentsGroup1 = new StudentsGroup(1111, students);
+        StudentsGroup studentsGroup2 = new StudentsGroup(2222, students2);
+        StudentsGroup studentsGroup3 = new StudentsGroup(3333, students3);
+        StudentsGroup studentsGroup4 = new StudentsGroup(4444, students4);
 
         StudentStream studentStream = new StudentStream();
 
@@ -99,44 +99,44 @@ public class App {
         // С помощью данных циклов вывожу список студентов с присвоением потока, далее каждой группе присваиваю номер и вывожу список студентов
         // После вывожу повторно тоже самое, но в отсортированном виде по количеству студенотв в группах
 
-        System.out.println("Номер потока - " + studentStream.getNumbStream());
-        for (StudentsGroup studentGroup : studentStream) {
-        System.out.println();
-        System.out.println("Номер группы - " + studentGroup.getNumbGroup());
-        System.out.println();
-        for (Student student : studentGroup) {
-        System.out.println(student);
-        }
-        System.out.println("--------------------------");
-        }
+        // System.out.println("Номер потока - " + studentStream.getNumbStream());
+        // for (StudentsGroup studentGroup : studentStream) {
+        // System.out.println();
+        // System.out.println("Номер группы - " + studentGroup.getNumbGroup());
+        // System.out.println();
+        // for (Student student : studentGroup) {
+        // System.out.println(student);
+        // }
+        // System.out.println("--------------------------");
+        // }
 
-        System.err.println();
-        System.out.println("Отсортированный поток");
-        System.out.println();
+        // System.err.println();
+        // System.out.println("Отсортированный поток");
+        // System.out.println();
 
-        Collections.sort(studentStream.getStudentStream());
+        // Collections.sort(studentStream.getStudentStream());
 
-        System.out.println("Номер потока - " + studentStream.getNumbStream());
+        // System.out.println("Номер потока - " + studentStream.getNumbStream());
 
-        for (StudentsGroup studentGroup : studentStream) {
-        System.out.println();
-        System.out.println("Номер группы - " + studentGroup.getNumbGroup());
-        System.out.println();
-        for (Student student : studentGroup) {
-        System.out.println(student);
-        }
-        System.out.println("--------------------------");
-        }
-
-
+        // for (StudentsGroup studentGroup : studentStream) {
+        // System.out.println();
+        // System.out.println("Номер группы - " + studentGroup.getNumbGroup());
+        // System.out.println();
+        // for (Student student : studentGroup) {
+        // System.out.println(student);
+        // }
+        // System.out.println("--------------------------");
+        // }
 
 
 
+
+        // Данный код выводит номер потока, далее через цикл выводит номер группы и данные группы со списком студентов
+        // В отсортированном выводится тоже самое, но группы отсортированны по количеству студентов
 
         // System.out.println("Номер потока - " + studentStream.getNumbStream());
         // for (StudentsGroup studentGroup : studentStream) {
         //     System.out.println();
-        //     System.out.println("Номер группы - " + studentGroup.getNumbGroup());
         //     System.out.println();
         //     System.out.println(studentGroup);
         //     System.out.println("--------------------------");
@@ -147,7 +147,6 @@ public class App {
         // Collections.sort(studentStream.getStudentStream());
         // for (StudentsGroup studentGroup : studentStream) {
         //     System.out.println();
-        //     System.out.println("Номер группы - " + studentGroup.getNumbGroup());
         //     System.out.println();
         //     System.out.println(studentGroup);
         //     System.out.println("--------------------------");
@@ -155,14 +154,15 @@ public class App {
 
 
 
+            // В данном коде выполняется все как и кодом выше за ислючением если снять закоментированный код в 
+            // файле StudentGroup с 60 по 64 строку где дополнительно реализован метод сортировки по номеру группы
 
-
-        // System.out.println(studentStream);
-        // Collections.sort(studentStream.getStudentStream());
-        // System.err.println();
-        // System.out.println("Отсортированный поток");
-        // System.out.println();
-        // System.out.println(studentStream);
+        System.out.println(studentStream);
+        Collections.sort(studentStream.getStudentStream());
+        System.err.println();
+        System.out.println("Отсортированный поток");
+        System.out.println();
+        System.out.println(studentStream);
 
     }
 }

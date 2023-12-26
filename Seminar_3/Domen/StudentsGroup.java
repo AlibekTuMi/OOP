@@ -8,6 +8,9 @@ public class StudentsGroup implements Iterable<Student>, Comparable<StudentsGrou
 
     List<Student> students;
 
+    /*
+     * @param numbGroup - номер группы
+     */
     public StudentsGroup(int numbGroup, List<Student> students) {
         this.numbGroup = numbGroup;
         this.students = students;
@@ -44,8 +47,8 @@ public class StudentsGroup implements Iterable<Student>, Comparable<StudentsGrou
     public Iterator<Student> iterator() {
         return new IteratorStudents(students);
     }
-    // Реализовал интерфейс, с помощью которого сортирую группы по количеству студентов, и если количество
-    // студентов совпадает, то сортирую по идентификатору группы группы
+    // Реализовал интерфейс, с помощью которого сортирую группы по количеству студентов, 
+    // И отдельно закомментирован метод если количество студентов совпадает, то сортирую по идентификатору группы группы
     @Override
     public int compareTo(StudentsGroup o) {
         
@@ -54,11 +57,11 @@ public class StudentsGroup implements Iterable<Student>, Comparable<StudentsGrou
         } else if (this.getStudents().size() > o.getStudents().size()) {
             return 1;
         }
-        if (this.getNumbGroup() < o.getNumbGroup()) {
-            return -1;
-        } else if (this.getNumbGroup() > o.getNumbGroup()) {
-            return 1;
-        }
+        // if (this.getNumbGroup() < o.getNumbGroup()) {
+        //     return -1;
+        // } else if (this.getNumbGroup() > o.getNumbGroup()) {
+        //     return 1;
+        // }
         return 0;
     }
     
