@@ -157,12 +157,12 @@ public class App {
             // В данном коде выполняется все как и кодом выше за ислючением если снять закоментированный код в 
             // файле StudentGroup с 60 по 64 строку где дополнительно реализован метод сортировки по номеру группы
 
-        System.out.println(studentStream);
-        Collections.sort(studentStream.getStudentStream());
-        System.err.println();
-        System.out.println("Отсортированный поток");
-        System.out.println();
-        System.out.println(studentStream);
+        // System.out.println(studentStream);
+        // Collections.sort(studentStream.getStudentStream());
+        // System.err.println();
+        // System.out.println("Отсортированный поток");
+        // System.out.println();
+        // System.out.println(studentStream);
 
     }
 }
